@@ -1,7 +1,7 @@
-# spring-gralvm-graphql
+# spring-graalvm-graphql
 spring-gralvm-graphql
 
-# GralVm-native-image
+# GraalVm-native-image
 https://docs.spring.io/spring-boot/docs/current/reference/html/native-image.html#native-image
 
 # GraphQl
