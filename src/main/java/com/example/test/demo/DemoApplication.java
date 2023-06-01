@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
@@ -20,7 +18,7 @@ public class DemoApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... args) {
 		Book b1=new Book();
 		b1.setTitle("test1");
 		b1.setDesc("desc1");
@@ -28,6 +26,14 @@ public class DemoApplication implements CommandLineRunner {
 		b1.setAuthor("auth1");
 		b1.setPages(125);
 
+		Book b2=new Book();
+		b2.setTitle("test11");
+		b2.setDesc("desc11");
+		b2.setPrice(10);
+		b2.setAuthor("auth11");
+		b2.setPages(12);
+
 		bookService.create(b1);
+		bookService.create(b2);
 	}
 }
