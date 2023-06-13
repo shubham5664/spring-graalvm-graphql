@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test #for local solution replace 'postgres-a2b' with localhost and port '5432' to '5433'
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
+
 @Entity
 @Getter
 @Setter
@@ -17,7 +18,7 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String title;
-    private String desc;
+    private String description;
 
     private String author;
     private double price;

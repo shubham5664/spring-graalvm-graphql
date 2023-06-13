@@ -27,7 +27,7 @@ public class BookResource {
     {
         Book book1=new Book();
         book1.setTitle(book.getTitle());
-        book1.setDesc(book.getDesc());
+        book1.setDescription(book.getDesc());
         book1.setPrice(book.getPrice());
         book1.setAuthor(book.getAuthor());
         book1.setPages(book.getPages());
